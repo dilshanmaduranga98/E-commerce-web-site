@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="css/homestyle.css">
+
+	<title></title>
+</head>
+<body>
+	<div class="main_container">
+
+		<div class="navigation_container">
+			<div class="logo_search_cart_container">
+				<ul>
+					<li><a href="#"><img src="media/sl grocery logo.png" width="80" height="80"></a></li>
+					<li style="border: 1px solid rgb(177, 177, 177); height: 35px; width: 80%; border-radius: 5px; padding: 2px; background-color: rgb(255, 255, 255);"><input type="text" name="search bar" placeholder="Search here .."><i class="fa-solid fa-magnifying-glass" style="margin-right: 10px;"></i></li>
+					<li><a href="/CartPage.html"><i class="fa-solid fa-cart-shopping" style="font-size: 23px;"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="menu_items_container">
+				<ul class="menu_items">
+					<li><a href="/homePage.html">Home</a></li>
+					<li>
+						<a href="#">Department<i class="fas fa-caret-down" style="margin-left:13px;"></i></a>
+						<div class="dropdown_list">
+							<ul>
+								<li><a href="/ChutneyPage.html">Chutney & Pickles</a></li>
+								<hr>
+								<li><a href="/Jams&CordialsPage.html">Jams,Cordials & Sodas</a></li>
+								<hr>
+								<li><a href="/NoodlesPage.html">Nooddles</a></li>
+								<hr>
+								<li><a href="/BiscutsPage.html">Biscuts & Snacks</a></li>
+								<hr>
+								<li><a href="/FishPage.html">Fish Products</a></li>
+								<hr>
+								<li><a href="/DairyPage.html">Dairy Products</a></li>
+								<hr>
+								<li><a href="/CeyloneTeaPage.html">Ceylon Tea & Coffee</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="/giftCard.html">Gift Cards</a></li>
+					<li><a href="/BestSellItemPage.html">Best Selling Items</a></li>
+					<li><a href="/NewArrivals.html">New Arrivals</a></li>
+					<li style="width: 50px; margin:0 25px;"><a href="/LoginPage.html">Login</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+        <div class="best_sell_items_container" style="margin-top: 190px;">
+			
+			<div class="Item_topic">
+				<h2>Ceylone Tea & Coffee</h2>
+			</div>
+
+			<div class="product_on_sale_row_one">
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDT1" src="/media/Dilmah premium loose tea bopf 200g.jpg" width="150"/>
+					</div>
+					<!--<div class="stock_lable">
+						<p>Save 10%</p>
+					</div>-->
+					<div class="item_description">
+						<p id="priceIDT1"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 2.12</p>
+						<h3 id="titleIDT1">Dilmah premium loose tea bopf 200g</h3>
+						<div class="rating_row">
+							<div id="ratingIDT1" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDT1" class="review_row">
+								10 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='T1'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDT1','titleIDT1','ratingIDT1','reviewIDT1','priceIDT1')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDT2" src="/media/Zesta green tea bags.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 2%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceIDT2"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 2.85</p>
+						<h3 id="titleIDT2">Zesta green tea bags 10g x 20</h3>
+						<div class="rating_row">
+							<div id="ratingIDT2" class="rating_stars">
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDT2" class="review_row">
+								No Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='T2'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDT2','titleIDT2','ratingIDT2','reviewIDT2','priceIDT2')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDT3" src="/media/Watawala tea pouch 100g.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 8%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceIDT3"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.05</p>
+						<h3 id="titleIDT3">Watawala tea pouch 100g</h3>
+						<div class="rating_row">
+							<div id="ratingIDT3" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDT3" class="review_row">
+								10 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='T3'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDT3','titleIDT3','ratingIDT3','reviewIDT3','priceIDT3')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDT4" src="/media/Dilmah tea english afternoon 125g.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 15%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceIDT4"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 3.25</p>
+						<h3 id="titleIDT4">Dilmah tea english afternoon 125g</h3>
+						<div class="rating_row">
+							<div id="ratingIDT4" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+							</div>
+							<div id="reviewIDT4" class="review_row">
+								21 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='T4'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDT4','titleIDT4','ratingIDT4','reviewIDT4','priceIDT4')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDT5" src="/media/lipton-ceylon-tea 400g.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 14%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceIDT5"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.75</p>
+						<h3 id="titleIDT5">Lipton ceylon tea 400g</h3>
+						<div class="rating_row">
+							<div id="ratingIDT5" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDT5" class="review_row">
+								12 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='T5'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDT5','titleIDT5','ratingIDT5','reviewIDT5','priceIDT5')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+			</div>	
+
+            <div class="product_on_sale_row_two">
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDT6" src="/media/Lipton laojee tea 400g.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 7%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceIDT6"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.65</p>
+						<h3 id="titleIDT6">Lipton laojee tea 400g</h3>
+						<div class="rating_row">
+							<div id="ratingIDT6" class="rating_stars">
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDT6" class="review_row">
+								No Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='T6'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDT6','titleIDT6','ratingIDT6','reviewIDT6','priceIDT6')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+            </div>
+			<div class="footer_container">
+				<div class="Contact_details">
+					<div class="Contact_us">
+						<a href="ContactUs.html">Contact Us</a>
+						<a href="/AboutUs.html">About Us</a>
+					</div>
+					<div class="follow_us">
+						<h4>Follow Us</h4>
+	
+						<div class="social_icon">
+							<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+							<a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+							<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+							<a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+							<a href="https://www.google.com/intl/si/gmail/about/"><i class="fa-solid fa-envelope"></i></a>
+						</div>
+					</div>
+				</div>
+	
+				<div class="payment_method_chips">
+					<div style="display: flex; align-items:center;">
+						<div class="logo"><a href="https://pay.amazon.com/" ><img src="/media/amazon-pay.png" width="50" height="50"/></a></div>
+						<div class="logo"><a href="https://www.apple.com/apple-pay/" ><img src="/media/apple-pay.png" width="40" height="40"/></a></div>
+						<div class="logo"><a href="https://pay.google.com/about/" ><img src="/media/google-pay.png" width="40" height="40"/></a></div>
+						<div class="logo"><a href="https://www.visa.com.lk/pay-with-visa/click-to-pay-with-visa.html" ><img src="/media/visa.png" width="40" height="40"/></a></div>
+						<div class="logo"><a href="https://vimopay.in/" ><img src="/media/vimeo.png" width="30" height="30"/></a></div>
+					</div>
+				
+					<div style="display: flex; align-items:center;">
+						<div class="logo"><a href="https://www.paypal.com/lk/home"><img src="/media/paypal.png" width="40" height="40"/></a></div>
+						<div class="logo"><a href="https://www.dinersclub.com/"><img src="/media/symbol.png" width="50" height="40"/></a></div>
+						<div class="logo"><a href="https://www.americanexpress.lk/" ><img src="/media/amex.png" width="40" height="40"/></a></div>
+					</div>
+				</div>
+				
+			</div>
+
+    </div>
+
+	<script src="functions.js"></script>
+
+</body>
+</html>  

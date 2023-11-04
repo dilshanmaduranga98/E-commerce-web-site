@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="css/homestyle.css">
+
+	<title></title>
+</head>
+<body>
+	<div class="main_container">
+
+		<div class="navigation_container">
+			<div class="logo_search_cart_container">
+				<ul>
+					<li><a href="#"><img src="media/sl grocery logo.png" width="80" height="80"></a></li>
+					<li style="border: 1px solid rgb(177, 177, 177); height: 35px; width: 80%; border-radius: 5px; padding: 2px; background-color: rgb(255, 255, 255);"><input type="text" name="search bar" placeholder="Search here .."><i class="fa-solid fa-magnifying-glass" style="margin-right: 10px;"></i></li>
+					<li><a href="/CartPage.html"><i class="fa-solid fa-cart-shopping" style="font-size: 23px;"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="menu_items_container">
+				<ul class="menu_items">
+					<li><a href="/homePage.html">Home</a></li>
+					<li>
+						<a href="#">Department<i class="fas fa-caret-down" style="margin-left:13px;"></i></a>
+						<div class="dropdown_list">
+							<ul>
+								<li><a href="/ChutneyPage.html">Chutney & Pickles</a></li>
+								<hr>
+								<li><a href="/Jams&CordialsPage.html">Jams,Cordials & Sodas</a></li>
+								<hr>
+								<li><a href="/NoodlesPage.html">Nooddles</a></li>
+								<hr>
+								<li><a href="/BiscutsPage.html">Biscuts & Snacks</a></li>
+								<hr>
+								<li><a href="/FishPage.html">Fish Products</a></li>
+								<hr>
+								<li><a href="/DairyPage.html">Dairy Products</a></li>
+								<hr>
+								<li><a href="/CeyloneTeaPage.html">Ceylon Tea & Coffee</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="/giftCard.html">Gift Cards</a></li>
+					<li><a href="/BestSellItemPage.html">Best Selling Items</a></li>
+					<li><a href="/NewArrivals.html">New Arrivals</a></li>
+					<li style="width: 50px; margin:0 25px;"><a href="/LoginPage.html">Login</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+        <div class="best_sell_items_container" style="margin-top: 190px;">
+			
+			<div class="Item_topic">
+				<h2>Dairy Products</h2>
+			</div>
+
+			<div class="product_on_sale_row_one">
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDD1" src="/media/elephant hous stawberry ice 1l.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 10%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceIDD1"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 0.62</p>
+						<h3 id="titleIDD1">Elephant hous stawberry ice 1l</h3>
+						<div class="rating_row">
+							<div id="ratingIDD1" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDD1" class="review_row">
+								3 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='D1'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDD1','titleIDD1','ratingIDD1','reviewIDD1','priceIDD1')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDD2" src="/media/Magic ice cream Vanila choco mix tub 1l.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 8%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceIDD2"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 0.65</p>
+						<h3 id="titleIDD2">Magic ice cream Vanila choco mix tub 1l</h3>
+						<div class="rating_row">
+							<div id="ratingIDD2" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDD2" class="review_row">
+								5 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='D2'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDD2','titleIDD2','ratingIDD2','reviewIDD2','priceIDD2')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDD3" src="/media/elephent house fruit & nut icecream 1l.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 6%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceIDD3"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.02</p>
+						<h3 id="titleIDD3">Elephent house fruit & nut icecream 1l</h3>
+						<div class="rating_row">
+							<div id="ratingIDD3" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDD3" class="review_row">
+								10 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='D3'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDD3','titleIDD3','ratingIDD3','reviewIDD3','priceIDD3')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDD4" src="/media/Ambewela Uht milk 1l.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 14%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceIDD4"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 0.42</p>
+						<h3 id="titleIDD4">Ambewela Uht milk 1l</h3>
+						<div class="rating_row">
+							<div id="ratingIDD4" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDD4" class="review_row">
+								3 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='D4'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDD4','titleIDD4','ratingIDD4','reviewIDD4','priceIDD4')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDD5" src="/media/Farm lanka goat milk 190ml.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 6%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceIDD5"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 0.72</p>
+						<h3 id="titleIDD5">Farm lanka goat milk 190ml</h3>
+						<div class="rating_row">
+							<div id="ratingIDD5" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDD5" class="review_row">
+								2 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='D5'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDD5','titleIDD5','ratingIDD5','reviewIDD5','priceIDD5')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+			</div>	
+
+            <div class="product_on_sale_row_two">
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDD6" src="/media/Kotmale non fat milk 1l.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 8%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceIDD6"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 0.50</p>
+						<h3 id="titleIDD6">Kotmale non fat milk 1l</h3>
+						<div class="rating_row">
+							<div id="ratingIDD6" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDD6" class="review_row">
+								3 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='D6'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDD6','titleIDD6','ratingIDD6','reviewIDD6','priceIDD6')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+            </div>
+
+			<div class="footer_container">
+				<div class="Contact_details">
+					<div class="Contact_us">
+						<a href="ContactUs.html">Contact Us</a>
+						<a href="#">About Us</a>
+					</div>
+					<div class="follow_us">
+						<h4>Follow Us</h4>
+		
+						<div class="social_icon">
+							<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+							<a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+							<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+							<a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+							<a href="https://www.google.com/intl/si/gmail/about/"><i class="fa-solid fa-envelope"></i></a>
+						</div>
+					</div>
+				</div>
+		
+				<div class="payment_method_chips">
+					<div style="display: flex; align-items:center;">
+						<div class="logo"><a href="https://pay.amazon.com/" ><img src="/media/amazon-pay.png" width="50" height="50"/></a></div>
+						<div class="logo"><a href="https://www.apple.com/apple-pay/" ><img src="/media/apple-pay.png" width="40" height="40"/></a></div>
+						<div class="logo"><a href="https://pay.google.com/about/" ><img src="/media/google-pay.png" width="40" height="40"/></a></div>
+						<div class="logo"><a href="https://www.visa.com.lk/pay-with-visa/click-to-pay-with-visa.html" ><img src="/media/visa.png" width="40" height="40"/></a></div>
+						<div class="logo"><a href="https://vimopay.in/" ><img src="/media/vimeo.png" width="30" height="30"/></a></div>
+					</div>
+				
+					<div style="display: flex; align-items:center;">
+						<div class="logo"><a href="https://www.paypal.com/lk/home"><img src="/media/paypal.png" width="40" height="40"/></a></div>
+						<div class="logo"><a href="https://www.dinersclub.com/"><img src="/media/symbol.png" width="50" height="40"/></a></div>
+						<div class="logo"><a href="https://www.americanexpress.lk/" ><img src="/media/amex.png" width="40" height="40"/></a></div>
+					</div>
+				</div>
+				
+				</div>
+		</div>		
+
+    </div>
+
+	<script src="functions.js"></script>
+</body>
+</html>  

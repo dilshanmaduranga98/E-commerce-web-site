@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="css/homestyle.css">
+
+	<title></title>
+</head>
+<body>
+	<div class="main_container">
+
+		<div class="navigation_container">
+			<div class="logo_search_cart_container">
+				<ul>
+					<li><a href="#"><img src="media/sl grocery logo.png" width="80" height="80"></a></li>
+					<li style="border: 1px solid rgb(177, 177, 177); height: 35px; width: 80%; border-radius: 5px; padding: 2px; background-color: rgb(255, 255, 255);"><input type="text" name="search bar" placeholder="Search here .."><i class="fa-solid fa-magnifying-glass" style="margin-right: 10px;"></i></li>
+					<li><a href="/CartPage.html"><i class="fa-solid fa-cart-shopping" style="font-size: 23px;"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="menu_items_container">
+				<ul class="menu_items">
+					<li><a href="/homePage.html">Home</a></li>
+					<li>
+						<a href="#">Department<i class="fas fa-caret-down" style="margin-left:13px;"></i></a>
+						<div class="dropdown_list">
+							<ul>
+								<li><a href="/ChutneyPage.html">Chutney & Pickles</a></li>
+								<hr>
+								<li><a href="/Jams&CordialsPage.html">Jams,Cordials & Sodas</a></li>
+								<hr>
+								<li><a href="/NoodlesPage.html">Nooddles</a></li>
+								<hr>
+								<li><a href="/BiscutsPage.html">Biscuts & Snacks</a></li>
+								<hr>
+								<li><a href="/FishPage.html">Fish Products</a></li>
+								<hr>
+								<li><a href="/DairyPage.html">Dairy Products</a></li>
+								<hr>
+								<li><a href="/CeyloneTeaPage.html">Ceylon Tea & Coffee</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="/giftCard.html">Gift Cards</a></li>
+					<li><a href="/BestSellItemPage.html">Best Selling Items</a></li>
+					<li><a href="/NewArrivals.html">New Arrivals</a></li>
+					<li style="width: 50px; margin:0 25px;"><a href="/LoginPage.html">Login</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+        <div class="best_sell_items_container" style="margin-top: 190px;">
+			
+			<div class="Item_topic">
+				<h2>Noodles</h2>
+			</div>
+
+			<div class="product_on_sale_row_one">
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDN1" src="/media/prima-kottu-me-family-pack-400g.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 10%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceIDN1"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.42</p>
+						<h3 id="titleIDN1">Prima kottu me family pack 400g</h3>
+						<div class="rating_row">
+							<div id="ratingIDN1" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDN1" class="review_row">
+								1 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='N1'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDN1','titleIDN1','ratingIDN1','reviewIDN1','priceIDN1')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDN2" src="/media/kottu mr.jpeg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 5%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceIDN2"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 0.15</p>
+						<h3 id="titleIDN2">Prima Kottu Me - Chicken Flavor 80g</h3>
+						<div class="rating_row">
+							<div id="ratingIDN2" class="rating_stars">
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDN2" class="review_row">
+								No Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='N2'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDN2','titleIDN2','ratingIDN2','reviewIDN2','priceIDN2')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDN3" src="/media/kottu me spice.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 4%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceIDN3"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 0.15</p>
+						<h3 id="titleIDN3">Prima kottu me spice flavor 80g</h3>
+						<div class="rating_row">
+							<div id="ratingIDN3" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDN3" class="review_row">
+								12 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='N3'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDN3','titleIDN3','ratingIDN3','reviewIDN3','priceIDN3')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDN4" src="/media/harischandra-red-rice-noodles-200g.jpg" width="150"/>
+					</div>
+					<div class="stock_lable" style="background-color:#474747;">
+						<p>Sold out</p>
+					</div>
+					<div class="item_description">
+						<p id="priceIDN4"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 0.65</p>
+						<h3 id="titleIDN4">Harischandra red rice noodles 400g</h3>
+						<div class="rating_row">
+							<div id="ratingIDN4" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDN4" class="review_row">
+								8 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button disabled>Add Cart</button>
+							<button disabled>Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDN5" src="/media/Harischandra plain noodles 400g.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 6%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceIDN5"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 0.60</p>
+						<h3 id="titleIDN5">Harischandra plain noodles 400g</h3>
+						<div class="rating_row">
+							<div id="ratingIDN5" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDN5" class="review_row">
+								6 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='N5'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDN5','titleIDN5','ratingIDN5','reviewIDN5','priceIDN5')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+			</div>	
+
+            <div class="product_on_sale_row_two">
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDN6" src="/media/Maggi noodles family pack 335g.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 5%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceIDN6"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 0.85</p>
+						<h3 id="titleIDN6">Maggi noodles family pack 335g</h3>
+						<div class="rating_row">
+							<div id="ratingIDN6" class="rating_stars">
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDN6" class="review_row">
+								No Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='N6'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDN6','titleIDN6','ratingIDN6','reviewIDN6','priceIDN6')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+            </div>
+
+    </div>
+
+	<div class="footer_container">
+		<div class="Contact_details">
+			<div class="Contact_us">
+				<a href="ContactUs.html">Contact Us</a>
+				<a href="/AboutUs.html">About Us</a>
+			</div>
+			<div class="follow_us">
+				<h4>Follow Us</h4>
+
+				<div class="social_icon">
+					<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+					<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+					<a href="https://www.google.com/intl/si/gmail/about/"><i class="fa-solid fa-envelope"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="payment_method_chips">
+			<div style="display: flex; align-items:center;">
+				<div class="logo"><a href="https://pay.amazon.com/" ><img src="/media/amazon-pay.png" width="50" height="50"/></a></div>
+				<div class="logo"><a href="https://www.apple.com/apple-pay/" ><img src="/media/apple-pay.png" width="40" height="40"/></a></div>
+				<div class="logo"><a href="https://pay.google.com/about/" ><img src="/media/google-pay.png" width="40" height="40"/></a></div>
+				<div class="logo"><a href="https://www.visa.com.lk/pay-with-visa/click-to-pay-with-visa.html" ><img src="/media/visa.png" width="40" height="40"/></a></div>
+				<div class="logo"><a href="https://vimopay.in/" ><img src="/media/vimeo.png" width="30" height="30"/></a></div>
+			</div>
+		
+			<div style="display: flex; align-items:center;">
+				<div class="logo"><a href="https://www.paypal.com/lk/home"><img src="/media/paypal.png" width="40" height="40"/></a></div>
+				<div class="logo"><a href="https://www.dinersclub.com/"><img src="/media/symbol.png" width="50" height="40"/></a></div>
+				<div class="logo"><a href="https://www.americanexpress.lk/" ><img src="/media/amex.png" width="40" height="40"/></a></div>
+			</div>
+		</div>
+		
+	</div>
+	<script src="functions.js"></script>
+</body>
+</html>    

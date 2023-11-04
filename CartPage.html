@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="css/homestyle.css">
+
+    <title>Document</title>
+
+    <style>
+     
+        .main
+        {
+            margin-top: 85px;
+            margin-left: 100px;
+        }
+     
+
+        .cart_item_roww
+        {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            width: 600px;
+            border-bottom: 1px solid rgb(216, 216, 216);
+        }
+
+        .cart-item-image
+        {
+            margin-right: 20px;
+            flex-basis: 10%;
+        }
+
+        .cart-item-details
+        {
+            flex-basis: 80%;
+        }
+
+        .cart-delete-btn
+        {
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+            width: 20px;
+            height: 20px;
+            flex-basis: 10%;
+            color: rgb(184, 0, 0);
+        }
+
+        .cart-delete-btn button 
+        {
+            width: 70%;
+            font-size: 15px;
+            padding: 5px;
+            background: #000;
+            font-weight: 900;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            color: rgb(255, 255, 255);
+        }
+
+        .cart-topic
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 185px;
+            padding-bottom: 20px;
+            font-weight: 400;
+            color: rgb(95, 95, 95);
+            width: 100%;
+            border-bottom: 0.2px solid rgb(206, 206, 206);
+        }
+
+        .sub_total
+        {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 580px;
+            word-spacing: 5px;
+            font-size: 25px;
+        }
+
+        .cart-checkout-btn
+        {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; 
+        }
+
+        .cart-checkout-btn button 
+        {
+            border: 0.5px solid rgb(126, 126, 126);
+            border-radius: 5px;
+            background-color: #fff;
+            transition: 0.3s;
+        }
+
+        .cart-checkout-btn button:hover
+        {
+            background-color: rgb(248, 79, 0);
+            border: none;
+            color: #fff;
+        } 
+
+    </style>
+</head>
+<body>
+    <div class="main_container">
+        <div class="cart-topic">
+            <h2>Cart Items</h2>
+        </div>
+		<div class="navigation_container">
+			<div class="logo_search_cart_container">
+				<ul>
+					<li><a href="#"><img src="media/sl grocery logo.png" width="80" height="80"></a></li>
+					<li style="border: 1px solid rgb(177, 177, 177); height: 35px; width: 80%; border-radius: 5px; padding: 2px; background-color: rgb(255, 255, 255);"><input type="text" name="search bar" placeholder="Search here .."><i class="fa-solid fa-magnifying-glass" style="margin-right: 10px;"></i></li>
+					<li><a href="/CartPage.html"><i class="fa-solid fa-cart-shopping" style="font-size: 23px;"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="menu_items_container">
+				<ul class="menu_items">
+					<li><a href="/homePage.html">Home</a></li>
+					<li>
+						<a href="#">Department<i class="fas fa-caret-down" style="margin-left:13px;"></i></a>
+						<div class="dropdown_list">
+							<ul>
+								<li><a href="/ChutneyPage.html">Chutney & Pickles</a></li>
+								<hr>
+								<li><a href="/Jams&CordialsPage.html">Jams,Cordials & Sodas</a></li>
+								<hr>
+								<li><a href="/NoodlesPage.html">Nooddles</a></li>
+								<hr>
+								<li><a href="/BiscutsPage.html">Biscuts & Snacks</a></li>
+								<hr>
+								<li><a href="/FishPage.html">Fish Products</a></li>
+								<hr>
+								<li><a href="/DairyPage.html">Dairy Products</a></li>
+								<hr>
+								<li><a href="/CeyloneTeaPage.html">Ceylon Tea & Coffee</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="/giftCard.html">Gift Cards</a></li>
+					<li><a href="/BestSellItemPage.html">Best Selling Items</a></li>
+					<li><a href="/NewArrivals.html">New Arrivals</a></li>
+					<li style="width: 50px; margin:0 25px;"><a href="/LoginPage.html">Login</a></li>
+				</ul>
+			</div>
+		</div>
+        <div id="m_container" class="main">
+            
+        </div>
+        <div class="cart-checkout-btn">
+            <a href="/CheckoutPage.html"><button style="width: 150px; height:50px; margin: 150px 100px;">Check out</button>
+            <a href="/homePage.html"><button style="width: 150px; height:50px; margin: 150px 100px;">Continue Shopping</button>
+        </div>
+
+        <div class="footer_container">
+			<div class="Contact_details">
+				<div class="Contact_us">
+					<a href="ContactUs.html">Contact Us</a>
+					<a href="/AboutUs.html">About Us</a>
+				</div>
+				<div class="follow_us">
+					<h4>Follow Us</h4>
+
+					<div class="social_icon">
+						<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+						<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+						<a href="https://www.google.com/intl/si/gmail/about/"><i class="fa-solid fa-envelope"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="payment_method_chips">
+				<div style="display: flex; align-items:center;">
+					<div class="logo"><a href="https://pay.amazon.com/" ><img src="/media/amazon-pay.png" width="50" height="50"/></a></div>
+					<div class="logo"><a href="https://www.apple.com/apple-pay/" ><img src="/media/apple-pay.png" width="40" height="40"/></a></div>
+					<div class="logo"><a href="https://pay.google.com/about/" ><img src="/media/google-pay.png" width="40" height="40"/></a></div>
+					<div class="logo"><a href="https://www.visa.com.lk/pay-with-visa/click-to-pay-with-visa.html" ><img src="/media/visa.png" width="40" height="40"/></a></div>
+					<div class="logo"><a href="https://vimopay.in/" ><img src="/media/vimeo.png" width="30" height="30"/></a></div>
+				</div>
+			
+				<div style="display: flex; align-items:center;">
+					<div class="logo"><a href="https://www.paypal.com/lk/home"><img src="/media/paypal.png" width="40" height="40"/></a></div>
+					<div class="logo"><a href="https://www.dinersclub.com/"><img src="/media/symbol.png" width="50" height="40"/></a></div>
+					<div class="logo"><a href="https://www.americanexpress.lk/" ><img src="/media/amex.png" width="40" height="40"/></a></div>
+				</div>
+			</div>
+			
+		</div>
+    </div>
+    
+    	<script src="functions.js"></script>
+</body>
+</html>

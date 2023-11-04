@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="css/homestyle.css">
+
+	<title></title>
+</head>
+<body>
+	<div class="main_container">
+
+		<div class="navigation_container">
+			<div class="logo_search_cart_container">
+				<ul>
+					<li><a href="#"><img src="media/sl grocery logo.png" width="80" height="80"></a></li>
+					<li style="border: 1px solid rgb(177, 177, 177); height: 35px; width: 80%; border-radius: 5px; padding: 2px; background-color: rgb(255, 255, 255);"><input type="text" name="search bar" placeholder="Search here .."><i class="fa-solid fa-magnifying-glass" style="margin-right: 10px;"></i></li>
+					<li><a href="/CartPage.html"><i class="fa-solid fa-cart-shopping" style="font-size: 23px;"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="menu_items_container">
+				<ul class="menu_items">
+					<li><a href="/homePage.html">Home</a></li>
+					<li>
+						<a href="#">Department<i class="fas fa-caret-down" style="margin-left:13px;"></i></a>
+						<div class="dropdown_list">
+							<ul>
+								<li><a href="/ChutneyPage.html">Chutney & Pickles</a></li>
+								<hr>
+								<li><a href="/Jams&CordialsPage.html">Jams,Cordials & Sodas</a></li>
+								<hr>
+								<li><a href="/NoodlesPage.html">Nooddles</a></li>
+								<hr>
+								<li><a href="/BiscutsPage.html">Biscuts & Snacks</a></li>
+								<hr>
+								<li><a href="/FishPage.html">Fish Products</a></li>
+								<hr>
+								<li><a href="/DairyPage.html">Dairy Products</a></li>
+								<hr>
+								<li><a href="/CeyloneTeaPage.html">Ceylon Tea & Coffee</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="/giftCard.html">Gift Cards</a></li>
+					<li><a href="/BestSellItemPage.html">Best Selling Items</a></li>
+					<li><a href="/NewArrivals.html">New Arrivals</a></li>
+					<li style="width: 50px; margin:0 25px;"><a href="/LoginPage.html">Login</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+        <div class="best_sell_items_container" style="margin-top: 190px;">
+			
+			<div class="Item_topic">
+				<h2>Chutney & Pickles</h2>
+			</div>
+
+			<div class="product_on_sale_row_one">
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDC1" src="/media/chutney.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 10%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceIDC1"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.12</p>
+						<h3 id="titleIDC1">MD spicy mango chutney 365g</h3>
+						<div class="rating_row">
+							<div id="ratingIDC1" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDC1" class="review_row">
+								2 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='C1'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDC1','titleIDC1','ratingIDC1','reviewIDC1','priceIDC1')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDC2" src="/media/md pickle.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 15%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceIDC2"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.15</p>
+						<h3 id="titleIDC2">MD Sinhala pickle 365g</h3>
+						<div class="rating_row">
+							<div id="ratingIDC2" class="rating_stars">
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDC2" class="review_row">
+								No Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='C2'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDC2','titleIDC2','ratingIDC2','reviewIDC2','priceIDC2')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDC3" src="/media/md mango chutney.jpg" width="100"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 6%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceIDC3"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.18</p>
+						<h3 id="titleIDC3">MD mango chutney 360g</h3>
+						<div class="rating_row">
+							<div id="ratingIDC3" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDC3" class="review_row">
+								2 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='C3'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDC3','titleIDC3','ratingIDC3','reviewIDC3','priceIDC3')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="item_card">
+					<div class="item_iamge">
+						<img 
+						id="imgIDC4" src="/media/MD mix fruit chutney 450g.jpg" width="150"/>
+					</div>
+					<!--<div class="stock_lable">
+						<p>Save 20%</p>
+					</div>-->
+					<div class="item_description">
+						<p id="priceIDC4"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.35</p>
+						<h3 id="titleIDC4">MD mix fruit chutney 450g</h3>
+						<div class="rating_row">
+							<div id="ratingIDC4" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDC4" class="review_row">
+								4 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='C4'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDC4','titleIDC4','ratingIDC4','reviewIDC4','priceIDC4')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="item_card">
+					<div class="item_iamge">
+						<img id="imgIDC5" src="/media/Mccurry pineapple chutney 450g.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 10%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceIDC5"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.72</p>
+						<h3 id="titleIDC5">Mccurry pineapple chutney 450g</h3>
+						<div class="rating_row">
+							<div id="ratingIDC5" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDC5" class="review_row">
+								8 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number='C5'>Add Cart</button>
+							<button onclick="displayNewPage('imgIDC5','titleIDC5','ratingIDC5','reviewIDC5','priceIDC5')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+			</div>	
+
+            <div class="product_on_sale_row_two">
+				<div class="item_card">
+					<div class="item_iamge">
+						<img src="/media/Kist amberalla chuney 450g.jpg" width="150"/>
+					</div>
+					<div class="stock_lable" style="background-color: #474747;">
+						<p>Sold out</p>
+					</div>
+					<div class="item_description">
+						<p><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.25</p>
+						<h3>Kist amberalla chuney 450g</h3>
+						<div class="rating_row">
+							<div class="rating_stars">
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div class="review_row">
+								No Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button onclick="#">Add Cart</button>
+							<button onclick="#">Buy Now</button>
+						</div>
+					</div>
+				</div>
+        	</div>
+		
+
+		<div class="footer_container">
+			<div class="Contact_details">
+				<div class="Contact_us">
+					<a href="ContactUs.html">Contact Us</a>
+					<a href="/AboutUs.html">About Us</a>
+				</div>
+				<div class="follow_us">
+					<h4>Follow Us</h4>
+
+					<div class="social_icon">
+						<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+						<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+						<a href="https://www.google.com/intl/si/gmail/about/"><i class="fa-solid fa-envelope"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="payment_method_chips">
+				<div style="display: flex; align-items:center;">
+					<div class="logo"><a href="https://pay.amazon.com/" ><img src="/media/amazon-pay.png" width="50" height="50"/></a></div>
+					<div class="logo"><a href="https://www.apple.com/apple-pay/" ><img src="/media/apple-pay.png" width="40" height="40"/></a></div>
+					<div class="logo"><a href="https://pay.google.com/about/" ><img src="/media/google-pay.png" width="40" height="40"/></a></div>
+					<div class="logo"><a href="https://www.visa.com.lk/pay-with-visa/click-to-pay-with-visa.html" ><img src="/media/visa.png" width="40" height="40"/></a></div>
+					<div class="logo"><a href="https://vimopay.in/" ><img src="/media/vimeo.png" width="30" height="30"/></a></div>
+				</div>
+			
+				<div style="display: flex; align-items:center;">
+					<div class="logo"><a href="https://www.paypal.com/lk/home"><img src="/media/paypal.png" width="40" height="40"/></a></div>
+					<div class="logo"><a href="https://www.dinersclub.com/"><img src="/media/symbol.png" width="50" height="40"/></a></div>
+					<div class="logo"><a href="https://www.americanexpress.lk/" ><img src="/media/amex.png" width="40" height="40"/></a></div>
+				</div>
+			</div>
+			
+		</div>
+
+    </div>
+	<script src="functions.js"></script>
+</body>
+</html>  

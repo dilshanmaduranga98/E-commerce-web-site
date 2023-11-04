@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/homestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+    <title>Gift Card</title>
+
+    <style>
+        .checked
+        {
+            color: rgb(255, 208, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="main_container">
+
+        <div class="navigation_container">
+			<div class="logo_search_cart_container">
+				<ul>
+					<li><a href="#"><img src="media/sl grocery logo.png" width="80" height="80"></a></li>
+					<li style="border: 1px solid rgb(177, 177, 177); height: 35px; width: 80%; border-radius: 5px; padding: 2px; background-color: rgb(255, 255, 255);"><input type="text" name="search bar" placeholder="Search here .."><i class="fa-solid fa-magnifying-glass" style="margin-right: 10px;"></i></li>
+					<li><a href="/CartPage.html"><i class="fa-solid fa-cart-shopping" style="font-size: 23px;"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="menu_items_container">
+				<ul class="menu_items">
+					<li><a href="/homePage.html">Home</a></li>
+					<li>
+						<a href="#">Department<i class="fas fa-caret-down" style="margin-left:13px;"></i></a>
+						<div class="dropdown_list">
+							<ul>
+								<li><a href="/ChutneyPage.html">Chutney & Pickles</a></li>
+								<hr>
+								<li><a href="/Jams&CordialsPage.html">Jams,Cordials & Sodas</a></li>
+								<hr>
+								<li><a href="/NoodlesPage.html">Nooddles</a></li>
+								<hr>
+								<li><a href="/BiscutsPage.html">Biscuts & Snacks</a></li>
+								<hr>
+								<li><a href="/FishPage.html">Fish Products</a></li>
+								<hr>
+								<li><a href="/DairyPage.html">Dairy Products</a></li>
+								<hr>
+								<li><a href="/CeyloneTeaPage.html">Ceylon Tea & Coffee</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="/giftCard.html">Gift Cards</a></li>
+					<li><a href="/BestSellItemPage.html">Best Selling Items</a></li>
+					<li><a href="/NewArrivals.html">New Arrivals</a></li>
+					<li style="width: 50px; margin:0 25px;"><a href="/LoginPage.html">Login</a></li>
+				</ul>
+			</div>
+		</div>
+
+        <div class="gft_full_card_container">
+            <div class="gift_container">
+                <div class="image_container">
+                    <div style="background-color: rgb(0, 46, 77);"><img id="imgIDGift" src="/media/sl grocery logo.png" width="350" height="500"></div>
+                    <h1>GIFT CARD</h1>
+                </div>
+
+                <div class="details_container">
+                    <div class="description_row">
+                        <h3 id="titleIDGift">SL GROCERY Gift Card</h3>
+                        <div class="rating_row" style="display: flex; align-items:center;">
+							<div id="ratingIDGift" class="rating_stars" style="color: #fff;">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewIDGift" class="review_row">
+								9 Review
+							</div>
+						</div>
+                        <p>This gift card you can use<br> in checkout page directly without any condition.<br>also you can give some one to as a gift this.<br>it will be wonderful girt for his or him.<br>
+                        So, enjoy with our gift card.Thank you!</p>
+                        <p id="priceIDGift" style="font-size: 23px;  letter-spacing:1px; width: 120px; height: 30px; background-color: rgb(34, 34, 34); padding: 10px; text-align: center; color: #fff;"><img src="/media/poland-zloty-icon.png" width="20" height="20" style="margin-right: 10px;">50.00</p>
+                    </div>
+                    <div class="button_row">
+                        <a href="/homePage.html"><button>home</button></a>
+                    </div>
+                </div>
+
+                <div class="checkout_section">
+                    <input type="number" min="0" max="5" placeholder="No of gift cards..">
+                    <button onclick="displayNewPage('imgIDGift','titleIDGift','ratingIDGift','reviewIDGift','priceIDGift')">Buy now</button>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="footer_container">
+            <div class="Contact_details">
+                <div class="Contact_us">
+                    <a href="ContactUs.html">Contact Us</a>
+                    <a href="/AboutUs.html">About Us</a>
+                </div>
+                <div class="follow_us">
+                    <h4>Follow Us</h4>
+
+                    <div class="social_icon">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.google.com/intl/si/gmail/about/"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment_method_chips">
+                <div style="display: flex; align-items:center;">
+                    <div class="logo"><a href="https://pay.amazon.com/" ><img src="/media/amazon-pay.png" width="50" height="50"/></a></div>
+                    <div class="logo"><a href="https://www.apple.com/apple-pay/" ><img src="/media/apple-pay.png" width="40" height="40"/></a></div>
+                    <div class="logo"><a href="https://pay.google.com/about/" ><img src="/media/google-pay.png" width="40" height="40"/></a></div>
+                    <div class="logo"><a href="https://www.visa.com.lk/pay-with-visa/click-to-pay-with-visa.html" ><img src="/media/visa.png" width="40" height="40"/></a></div>
+                    <div class="logo"><a href="https://vimopay.in/" ><img src="/media/vimeo.png" width="30" height="30"/></a></div>
+                </div>
+            
+                <div style="display: flex; align-items:center;">
+                    <div class="logo"><a href="https://www.paypal.com/lk/home"><img src="/media/paypal.png" width="40" height="40"/></a></div>
+                    <div class="logo"><a href="https://www.dinersclub.com/"><img src="/media/symbol.png" width="50" height="40"/></a></div>
+                    <div class="logo"><a href="https://www.americanexpress.lk/" ><img src="/media/amex.png" width="40" height="40"/></a></div>
+                </div>
+            </div>
+            
+        </div>
+</div>     
+
+<script src="functions.js"></script>
+
+</body>
+</html>

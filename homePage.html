@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="css/homestyle.css">
+
+	<title></title>
+
+	
+</head>
+<body>
+	<div class="main_container">
+		<div class="navigation_container">
+			<div class="logo_search_cart_container">
+				<ul>
+					<li><a href="#"><img src="media/sl grocery logo.png" width="80" height="80"></a></li>
+					<li style="border: 1px solid rgb(177, 177, 177); height: 35px; width: 80%; border-radius: 5px; padding: 2px; background-color: rgb(255, 255, 255);"><input type="text" name="search bar" placeholder="Search here .."><i class="fa-solid fa-magnifying-glass" style="margin-right: 10px;"></i></li>
+					<li><a href="/CartPage.html"><i class="fa-solid fa-cart-shopping" style="font-size: 23px;"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="menu_items_container">
+				<ul class="menu_items">
+					<li><a href="/homePage.html">Home</a></li>
+					<li>
+						<a href="#">Department<i class="fas fa-caret-down" style="margin-left:13px;"></i></a>
+						<div class="dropdown_list">
+							<ul>
+								<li><a href="/ChutneyPage.html">Chutney & Pickles</a></li>
+								<hr>
+								<li><a href="/Jams&CordialsPage.html">Jams,Cordials & Sodas</a></li>
+								<hr>
+								<li><a href="/NoodlesPage.html">Nooddles</a></li>
+								<hr>
+								<li><a href="/BiscutsPage.html">Biscuts & Snacks</a></li>
+								<hr>
+								<li><a href="/FishPage.html">Fish Products</a></li>
+								<hr>
+								<li><a href="/DairyPage.html">Dairy Products</a></li>
+								<hr>
+								<li><a href="/CeyloneTeaPage.html">Ceylon Tea & Coffee</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="/giftCard.html">Gift Cards</a></li>
+					<li><a href="/BestSellItemPage.html">Best Selling Items</a></li>
+					<li><a href="/NewArrivals.html">New Arrivals</a></li>
+					<li style="width: 50px; margin:0 25px;"><a href="/LoginPage.html">Login</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="welcome_banner_container">
+			<div class="welcome_banner">
+				<div class="bannner_image"><img src="media/sl grocery logo.png" width="220" height="220"></div>
+				<div class="banner_name">
+					<p>SL GROCERY</p>
+					<h3>Grocery Store for Sri Lankans Living in Poland</h3>
+				</div>
+			</div>
+		</div>
+
+<!-- product on sale cube -->
+		<div class="product_on_sale_ietm_container">
+			<div class="Item_topic">
+<!---topic -->	<h2>Most View Products</h2>
+			</div>
+
+<!--first row of product on sale-->			
+			<div class="product_on_sale_row_one">
+		<!--first item of product on sale row one-->		
+				<div class="item_card" id="item1" data-name="p-1">
+					<div class="item_iamge">
+						<img id="imgID1" src="/media/chutney.jpg" width="150"/>
+					</div>
+
+					<div class="stock_lable">
+						<p>Save 20%</p>
+					</div>
+
+					<div id="Descri" class="item_description">
+						<p id="priceID1"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.50</p>
+						<h3 id="titleID1">MD Spicy Mango Chutney 350g</h3>
+						<div class="rating_row">
+							<div id="ratingID1" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewID1" class="review_row">
+								5 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number="1">Add Cart</button>
+							<button onclick="displayNewPage('imgID1','titleID1','ratingID1','reviewID1','priceID1')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+	<!--second item of product on sale row one-->		
+				<div class="item_card" data-name="p-2">
+					<div class="item_iamge" id="item2">
+						<img id="imgID2" src="/media/katta-sambol-removebg-preview-788x788.png" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 5%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceID2"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.20</p>
+						<h3 id="titleID2">MC Curry Katta Sambol (Premium Quality) 365g </h3>
+						<div class="rating_row">
+							<div id="ratingID2" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewID2" class="review_row">
+								2 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number="2">Add Cart</button>
+							<button onclick="displayNewPage('imgID2','titleID2','ratingID2','reviewID2','priceID2')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+	<!--Third item of product on sale row one-->			
+				<div class="item_card" data-name="p-3">
+					<div class="item_iamge" id="item3">
+						<img src="/media//kottu me spice.jpg" width="150"/>
+					</div>
+					<div class="stock_lable" style="background-color: #474747;">
+						<p>Sold out</p>
+					</div>
+					<div class="item_description">
+						<p><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 0.15</p>
+						<h3>Prima Kottu Me - Hot & Spice flavor 80g</h3>
+						<div class="rating_row">
+							<div class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div class="review_row">
+								25 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number="3">Add Cart</button>
+							<button>Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+	<!--fourth item of product on sale row one-->			
+				<div class="item_card" data-name="p-4">
+					<div class="item_iamge" id="item4">
+						<img id="imgID4" src="/media/maldiv fish sambol.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 15%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceID4"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.12</p>
+						<h3 id="titleID4">MD Maldive Fish Sambol 360g</h3>
+						<div class="rating_row">
+							<div id="ratingID4" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewID4" class="review_row">
+								4 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number="4">Add Cart</button>
+							<button onclick="displayNewPage('imgID4','titleID4','ratingID4','reviewID4','priceID4')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+	<!--Fifth item of product on sale row one-->
+				<div class="item_card" data-name="p-5">
+					<div class="item_iamge" id="item5">
+						<img id="imgID5" src="/media/mccurry-sparts-badun.png" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 25%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceID5"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 0.92</p>
+						<h3 id="titleID5">MC Curry Sparts Badun 250g</h3>
+						<div class="rating_row">
+							<div id="ratingID5" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+							</div>
+							<div id="reviewID5" class="review_row">
+								32 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number="5">Add Cart</button>
+							<button onclick="displayNewPage('imgID5','titleID5','ratingID5','reviewID5','priceID5')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+			</div>	
+
+
+<!--begin of product on sale row two-->
+
+<!--First item of product on sale row two-->
+		<div class="product_on_sale_row_two">
+				<div class="item_card" data-name="p-6">
+					<div class="item_iamge" id="item6">
+						<img id="imgID6" src="/media/md lunu miris.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 12%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceID6"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.23</p>
+						<h3 id="titleID6">MD Lunu Miris 340g</h3>
+						<div class="rating_row">
+							<div id="ratingID6" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewID6" class="review_row">
+								9 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number="6">Add Cart</button>
+							<button onclick="displayNewPage('imgID6','titleID6','ratingID6','reviewID6','priceID6')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+<!--Second item of product on sale row two-->
+				<div class="item_card" data-name="p-7">
+					<div class="item_iamge" id="item7">
+						<img id="imgID7" src="/media/md mango chutney.jpg" width="100"/>
+					</div>
+					<!--<div class="stock_lable">
+						<p>Save 20%</p>
+					</div>-->
+					<div class="item_description">
+						<p id="priceID7"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.40</p>
+						<h3 id="titleID7">MD Non - Spicy Mango Chutney 350g</h3>
+						<div class="rating_row">
+							<div id="ratingID7" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewID7" class="review_row">
+								12 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number="7">Add Cart</button>
+							<button onclick="displayNewPage('imgID7','titleID7','ratingID7','reviewID7','priceID7')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+<!--Third item of product on sale row two-->
+				<div class="item_card"  data-name="p-8">
+					<div class="item_iamge">
+						<img id="imgID8" src="/media/md pickle.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 13%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceID8"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.65</p>
+						<h3 id="titleID8">MD Sinhala Pickel 365g</h3>
+						<div class="rating_row">
+							<div id="ratingID8" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewID8" class="review_row">
+								25 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number="8">Add Cart</button>
+							<button onclick="displayNewPage('imgID8','titleID8','ratingID8','reviewID8','priceID8')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+	<!--Fourth item of product on sale row two-->			
+				<div class="item_card"  data-name="p-9">
+					<div class="item_iamge">
+						<img id="imgID9" src="/media/MD stawberry jam.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 5%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceID9"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.20</p>
+						<h3 id="titleID9">MD Strawberry Jam (With Whole Strawberry) 350g</h3>
+						<div class="rating_row">
+							<div id="ratingID9" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+							</div>
+							<div id="reviewID9" class="review_row">
+								35 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number="9">Add Cart</button>
+							<button onclick="displayNewPage('imgID9','titleID9','ratingID9','reviewID9','priceID9')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+	<!--Fifth item of product on sale row two-->			
+				<div class="item_card"  data-name="p-10">
+					<div class="item_iamge">
+						<img id="imgID10" src="/media/MD-Coconut-viniger.png" width="120"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 20%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceID10"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 0.75</p>
+						<h3 id="titleID10">MD Coconut Vinger (natural) 450ml</h3>
+						<div class="rating_row">
+							<div id="ratingID10" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewID10" class="review_row">
+								8 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number="10">Add Cart</button>
+							<button onclick="displayNewPage('imgID10','titleID10','ratingID10','reviewID10','priceID10')">Buy Now</button>
+						</div>
+					</div>
+				</div>				
+		</div>
+<!--End of Product on sale cube-->
+
+<!--Start of Best Sell items cube-->
+		<div class="best_sell_items_container">
+			
+			<div class="Item_topic">
+				<h2>Best Sell Items</h2>
+			</div>
+
+			<div class="product_on_sale_row_one">
+				<div class="item_card" data-name="p-11">
+					<div class="item_iamge">
+						<img src="/media/harischandra-kurakkan-four-400g.jpg" width="150"/>
+					</div>
+					<div class="stock_lable" style="background-color: #474747;">
+						<p>Sold Out</p>
+					</div>
+					<div class="item_description">
+						<p><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.12</p>
+						<h3>Harsichandra KurakkanFolur 400g</h3>
+						<div class="rating_row">
+							<div class="rating_stars">
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div class="review_row">
+								no Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number="11">Add Cart</button>
+							<button>Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="item_card"  data-name="p-12">
+					<div class="item_iamge">
+						<img id="imgID12" src="/media/kottu mr.jpeg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 5%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceID12"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 0.15</p>
+						<h3 id="titleID12">Prima Kottu Me - Chicken Flavor 80g</h3>
+						<div class="rating_row">
+							<div id="ratingID12" class="rating_stars">
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewID12" class="review_row">
+								No Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number="12">Add Cart</button>
+							<button onclick="displayNewPage('imgID12','titleID12','ratingID12','reviewID12','priceID12')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="item_card"  data-name="p-13">
+					<div class="item_iamge">
+						<img id="imgID13" src="/media/lipton-ceylon-tea 400g.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 14%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceID13"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.75</p>
+						<h3 id="titleID13">Lipton Ceylon Tea 400g</h3>
+						<div class="rating_row">
+							<div id="ratingID13" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewID13" class="review_row">
+								12 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number="13">Add Cart</button>
+							<button onclick="displayNewPage('imgID13','titleID13','ratingID13','reviewID13','priceID13')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="item_card"  data-name="p-14">
+					<div class="item_iamge">
+						<img id="imgID14" src="/media/maiban-gold-mari-350g.jpg" width="150"/>
+					</div>
+					<!--<div class="stock_lable">
+						<p>Save 20%</p>
+					</div>-->
+					<div class="item_description">
+						<p id="priceID14"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.15</p>
+						<h3 id="titleID14">Maliban Gold Marie 350g</h3>
+						<div class="rating_row">
+							<div id="ratingID14" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewID14" class="review_row">
+								8 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number="14">Add Cart</button>
+							<button onclick="displayNewPage('imgID14','titleID14','ratingID14','reviewID14','priceID14')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="item_card"  data-name="p-15">
+					<div class="item_iamge">
+						<img id="imgID15" src="/media/Md tomato souce.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 10%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceID15"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.50</p>
+						<h3 id="titleID15">MD Tomato Souce 180ml</h3>
+						<div class="rating_row">
+							<div id="ratingID15" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewID15" class="review_row">
+								6 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number="15">Add Cart</button>
+							<button onclick="displayNewPage('imgID15','titleID15','ratingID15','reviewID15','priceID15')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+			</div>	
+
+			<div class="product_on_sale_row_two">
+				<div class="item_card"  data-name="p-16">
+					<div class="item_iamge">
+						<img id="imgID16" src="/media/zera-coconut-milk-180ml.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 5%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceID16"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 0.30</p>
+						<h3 id="titleID16">Zera Real Coconut Milk 180ml</h3>
+						<div class="rating_row">
+							<div id="ratingID16" class="rating_stars">
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewID16" class="review_row">
+								No Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number="16">Add Cart</button>
+							<button onclick="displayNewPage('imgID16','titleID16','ratingID16','reviewID16','priceID16')
+							">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="item_card"  data-name="p-17">
+					<div class="item_iamge">
+						<img id="imgID17" src="/media/munchee-kome-90g.jpg" width="150"/>
+					</div>
+					<div class="stock_lable">
+						<p>Save 2%</p>
+					</div>
+					<div class="item_description">
+						<p id="priceID17"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 0.24</p>
+						<h3 id="titleID17">Munchee Kome - BBQ Flavor 90g</h3>
+						<div class="rating_row">
+							<div id="ratingID17" class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewID17" class="review_row">
+								15 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number="17">Add Cart</button>
+							<button onclick="displayNewPage('imgID17','titleID17','ratingID17','reviewID17','priceID17')
+							">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="item_card"  data-name="p-18">
+					<div class="item_iamge">
+						<img src="/media/nipuna-rice-1kg.jpg" width="150"/>
+					</div>
+					<div class="stock_lable" style="background-color: #474747;">
+						<p>Sold Out</p>
+					</div>
+					<div class="item_description">
+						<p><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 4.20</p>
+						<h3>Nupuna Keeri Samba 5kg</h3>
+						<div class="rating_row">
+							<div class="rating_stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div class="review_row">
+								22 Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number="18">Add Cart</button>
+							<button>Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="item_card"  data-name="p-19">
+					<div class="item_iamge">
+						<img id="imgID19" src="/media/mdk-white-rice-string-hopper-flour-1kg.png" width="150"/>
+					</div>
+					<!---<div class="stock_lable">
+						<p>Save 20%</p>
+					</div>-->
+					<div class="item_description">
+						<p id="priceID19"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 0.65</p>
+						<h3 id="titleID19">MDK White Rice String Hopper Flour 1kg</h3>
+						<div class="rating_row">
+							<div id="ratingID19" class="rating_stars">
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<div id="reviewID19" class="review_row">
+								No Review
+							</div>
+						</div>
+	
+						<div class="item_button_row">
+							<button class="addToCart-btn" data-item_number="19">Add Cart</button>
+							<button onclick="displayNewPage('imgID19','titleID19','ratingID19','reviewID19','priceID19')">Buy Now</button>
+						</div>
+					</div>
+				</div>
+
+		    </div>
+		</div>
+
+
+<!---Behin of  New Product Item-->
+		<div class="new_product_items_container">
+
+			<div class="Item_topic">
+				<!---topic -->	<h2>New Arrivals</h2>
+			</div>
+				
+		<!--first row of New Product Item-->			
+			<div class="product_on_sale_row_one">
+						<!--first item of New Product Item row one-->		
+								<div class="item_card"  data-name="p-20">
+									<div class="item_iamge">
+										<img id="imgID20" src="/media/munche-miks-short-200g.jpg" width="150"/>
+									</div>
+									<div class="stock_lable">
+										<p>Save 10%</p>
+									</div>
+									<div class="item_description">
+										<p id="priceID20"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 0.20</p>
+										<h3 id="titleID20">Munchee Milk Short Cake Busicute 200g</h3>
+										<div class="rating_row">
+											<div id="ratingID20" class="rating_stars">
+												<span class="fa fa-star "></span>
+												<span class="fa fa-star "></span>
+												<span class="fa fa-star "></span>
+												<span class="fa fa-star "></span>
+												<span class="fa fa-star "></span>
+											</div>
+											<div id="reviewID20" class="review_row">
+												No Review
+											</div>
+										</div>
+					
+										<div class="item_button_row">
+											<button class="addToCart-btn" data-item_number="20">Add Cart</button>
+											<button onclick="displayNewPage('imgID20','titleID20','ratingID20','reviewID20','priceID20')">Buy Now</button>
+										</div>
+									</div>
+								</div>
+				
+					<!--second item of New Product Item row one-->		
+								<div class="item_card"  data-name="p-21">
+									<div class="item_iamge">
+										<img id="imgID21" src="/media/fingle-Kottu.jpg" width="150"/>
+									</div>
+									<div class="stock_lable" style="background-color: #474747;">
+										<p>Sold Out</p>
+									</div>
+									<div class="item_description">
+										<p id="priceID21"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 0.45</p>
+										<h3 id="titleID21">Fingle Kottu Roti 300g</h3>
+										<div class="rating_row">
+											<div id="ratingID21" class="rating_stars">
+												<span class="fa fa-star "></span>
+												<span class="fa fa-star "></span>
+												<span class="fa fa-star "></span>
+												<span class="fa fa-star "></span>
+												<span class="fa fa-star "></span>
+											</div>
+											<div id="reviewID21" class="review_row">
+												No Review
+											</div>
+										</div>
+					
+										<div class="item_button_row">
+											<button class="addToCart-btn" data-item_number="21">Add Cart</button>
+											<button>Buy Now</button>
+										</div>
+									</div>
+								</div>
+				
+					<!--Third item of New Product Item row one-->			
+								<div class="item_card"  data-name="p-22">
+									<div class="item_iamge">
+										<img id="imgID22" src="/media/MD-Passion-Fruit-Jam-450g_1024x1024.jpg" width="150"/>
+									</div>
+									<div class="stock_lable">
+										<p>Save 10%</p>
+									</div>
+									<div class="item_description">
+										<p id="priceID22"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.75</p>
+										<h3 id="titleID22">MD Passion Fruit Jam 450g</h3>
+										<div class="rating_row">
+											<div id="ratingID22" class="rating_stars">
+												<span class="fa fa-star "></span>
+												<span class="fa fa-star "></span>
+												<span class="fa fa-star "></span>
+												<span class="fa fa-star "></span>
+												<span class="fa fa-star "></span>
+											</div>
+											<div id="reviewID22" class="review_row">
+												No Review
+											</div>
+										</div>
+					
+										<div class="item_button_row">
+											<button class="addToCart-btn" data-item_number="22">Add Cart</button>
+											<button onclick="displayNewPage('imgID22','titleID22','ratingID22','reviewID22','priceID22')">Buy Now</button>
+										</div>
+									</div>
+								</div>
+				
+					<!--fourth item of New Product Item row one-->			
+								<div class="item_card"   data-name="p-23">
+									<div class="item_iamge">
+										<img id="imgID23" src="/media/munchee-cream-creacker.jpg" width="150"/>
+									</div>
+									<!--<div class="stock_lable">
+										<p>Save 20%</p>
+									</div>-->
+									<div class="item_description">
+										<p id="priceID23"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.24</p>
+										<h3 id="titleID23">Munchee Cream Cracker 400g</h3>
+										<div class="rating_row">
+											<div id="ratingID23" class="rating_stars">
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star "></span>
+											</div>
+											<div id="reviewID23" class="review_row">
+												2 Review
+											</div>
+										</div>
+					
+										<div class="item_button_row">
+											<button class="addToCart-btn" data-item_number="23">Add Cart</button>
+											<button onclick="displayNewPage('imgID23','titleID23','ratingID23','reviewID23','priceID23')">Buy Now</button>
+										</div>
+									</div>
+								</div>
+				
+					<!--Fifth item of New Product Item row one-->
+								<div class="item_card"   data-name="p-24">
+									<div class="item_iamge">
+										<img id="imgID24"src="/media/mdk-those-mix.jpg" width="125"/>
+									</div>
+									<div class="stock_lable">
+										<p>Save 12%</p>
+									</div>
+									<div class="item_description">
+										<p id="priceID24"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.50</p>
+										<h3 id="titleID24">MDK Those Mix 300g</h3>
+										<div class="rating_row">
+											<div id="ratingID24" class="rating_stars">
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star "></span>
+												<span class="fa fa-star "></span>
+											</div>
+											<div id="reviewID24" class="review_row">
+												1 Review
+											</div>
+										</div>
+					
+										<div class="item_button_row">
+											<button class="addToCart-btn" data-item_number="24">Add Cart</button>
+											<button onclick="displayNewPage('imgID24','titleID24','ratingID24','reviewID24','priceID24')">Buy Now</button>
+										</div>
+									</div>
+								</div>
+			</div>	
+				
+				
+		<!--begin of product on sale row two-->
+				
+		<!--First item of New Product Item row two-->
+			<div class="product_on_sale_row_two">
+								<div class="item_card"   data-name="p-25">
+									<div class="item_iamge">
+										<img id="imgID25" src="/media/MD-Pineapple-Jam.jpg" width="150"/>
+									</div>
+									<div class="stock_lable">
+										<p>Save 5%</p>
+									</div>
+									<div class="item_description">
+										<p id="priceID25"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.16</p>
+										<h3 id="titleID25">MD Pineapple Jam 350g</h3>
+										<div class="rating_row">
+											<div id="ratingID25" class="rating_stars">
+												<span class="fa fa-star "></span>
+												<span class="fa fa-star "></span>
+												<span class="fa fa-star "></span>
+												<span class="fa fa-star "></span>
+												<span class="fa fa-star "></span>
+											</div>
+											<div class="review_row" id="reviewID25">
+												No Review
+											</div>
+										</div>
+					
+										<div class="item_button_row">
+											<button class="addToCart-btn" data-item_number="25">Add Cart</button>
+											<button onclick="displayNewPage('imgID25','titleID25','ratingID25','reviewID25','priceID25')">Buy Now</button>
+										</div>
+									</div>
+								</div>
+				
+				<!--Second item of New Product Item row two-->
+								<div class="item_card"   data-name="p-26">
+									<div class="item_iamge">
+										<img id="imgID26" src="/media/maliban-ginger-biscuts 370g.jpg" width="150"/>
+									</div>
+									<div class="stock_lable">
+										<p>Save 8%</p>
+									</div>
+									<div class="item_description">
+										<p id="priceID26"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 1.32</p>
+										<h3 id="titleID26">Malibun Ginger Biscuts 370g</h3>
+										<div class="rating_row">
+											<div id="ratingID26" class="rating_stars">
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star "></span>
+												<span class="fa fa-star "></span>
+											</div>
+											<div class="review_row" id="reviewID26">
+												2 Review
+											</div>
+										</div>
+					
+										<div class="item_button_row">
+											<button class="addToCart-btn" data-item_number="26">Add Cart</button>
+											<button onclick="displayNewPage('imgID26','titleID26','ratingID26','reviewID26','priceID26')">Buy Now</button>
+										</div>
+									</div>
+								</div>
+				
+				<!--Third item of New Product Item row two-->
+								<div class="item_card"   data-name="p-27">
+									<div class="item_iamge">
+										<img id="img1" src="/media/harischandra-red-rice-noodles-200g.jpg" width="150"/>
+									</div>
+									<div class="stock_lable" style="background-color: #474747;">
+										<p>Sold out</p>
+									</div>
+									<div class="item_description">
+										<p id="price"><img src="/media/poland-zloty-icon.png" width="18" height="18"/> 0.62</p>
+										<h3 id="lbl">Harischandra Redi Rice Noodles 200g</h3>
+										<div class="rating_row">
+											<div class="rating_stars" id="div3">
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star "></span>
+											</div>
+											<div class="review_row" id="review">
+												4 Review
+											</div>
+										</div>
+					
+										<div class="item_button_row">
+											<button class="addToCart-btn" data-item_number="27">Add Cart</button>
+											<button>Buy Now</button>
+										</div>
+									</div>
+								</div>
+			
+			</div>
+
+		</div>
+
+		</div>
+		<div class="google_map_container">
+
+			<div class="map_image">
+				<div class="address_on_iamge">
+					<h2>SL Grocery</h2>
+					<h4>Okopowa 43, Warszawa<br>Poland</h4>
+					<br>
+					<h4>Mon - Fri, 10am - 8pm</h4>
+					<h4>Satuday, 10am - 8pm</h4>
+					<h4>Sunday, 10am - 6pm</h4>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="footer_container">
+			<div class="Contact_details">
+				<div class="Contact_us">
+					<a href="ContactUs.html">Contact Us</a>
+					<a href="/AboutUs.html">About Us</a>
+				</div>
+				<div class="follow_us">
+					<h4>Follow Us</h4>
+
+					<div class="social_icon">
+						<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+						<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+						<a href="https://www.google.com/intl/si/gmail/about/"><i class="fa-solid fa-envelope"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="payment_method_chips">
+				<div style="display: flex; align-items:center;">
+					<div class="logo"><a href="https://pay.amazon.com/" ><img src="/media/amazon-pay.png" width="50" height="50"/></a></div>
+					<div class="logo"><a href="https://www.apple.com/apple-pay/" ><img src="/media/apple-pay.png" width="40" height="40"/></a></div>
+					<div class="logo"><a href="https://pay.google.com/about/" ><img src="/media/google-pay.png" width="40" height="40"/></a></div>
+					<div class="logo"><a href="https://www.visa.com.lk/pay-with-visa/click-to-pay-with-visa.html" ><img src="/media/visa.png" width="40" height="40"/></a></div>
+					<div class="logo"><a href="https://vimopay.in/" ><img src="/media/vimeo.png" width="30" height="30"/></a></div>
+				</div>
+			
+				<div style="display: flex; align-items:center;">
+					<div class="logo"><a href="https://www.paypal.com/lk/home"><img src="/media/paypal.png" width="40" height="40"/></a></div>
+					<div class="logo"><a href="https://www.dinersclub.com/"><img src="/media/symbol.png" width="50" height="40"/></a></div>
+					<div class="logo"><a href="https://www.americanexpress.lk/" ><img src="/media/amex.png" width="40" height="40"/></a></div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<script src="functions.js"></script>
+	
+</body>
+</html>

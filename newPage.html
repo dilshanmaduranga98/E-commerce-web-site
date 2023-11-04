@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="css/homestyle.css">
+
+    <title>Document</title>
+
+    <style>
+        .card
+        {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction:column;
+        }
+
+        label
+        {
+            font-size: 20px;
+        }
+        .checked
+        {
+            color:rgb(255, 209, 58) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_container">
+
+		<div class="navigation_container">
+			<div class="logo_search_cart_container">
+				<ul>
+					<li><a href="#"><img src="media/sl grocery logo.png" width="80" height="80"></a></li>
+					<li style="border: 1px solid rgb(177, 177, 177); height: 35px; width: 80%; border-radius: 5px; padding: 2px; background-color: rgb(255, 255, 255);"><input type="text" name="search bar" placeholder="Search here .."><i class="fa-solid fa-magnifying-glass" style="margin-right: 10px;"></i></li>
+					<li><a href="/CartPage.html"><i class="fa-solid fa-cart-shopping" style="font-size: 23px;"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="menu_items_container">
+				<ul class="menu_items">
+					<li><a href="/homePage.html">Home</a></li>
+					<li>
+						<a href="#">Department<i class="fas fa-caret-down" style="margin-left:13px;"></i></a>
+						<div class="dropdown_list">
+							<ul>
+								<li><a href="/ChutneyPage.html">Chutney & Pickles</a></li>
+								<hr>
+								<li><a href="/Jams&CordialsPage.html">Jams,Cordials & Sodas</a></li>
+								<hr>
+								<li><a href="/NoodlesPage.html">Nooddles</a></li>
+								<hr>
+								<li><a href="/BiscutsPage.html">Biscuts & Snacks</a></li>
+								<hr>
+								<li><a href="/FishPage.html">Fish Products</a></li>
+								<hr>
+								<li><a href="/DairyPage.html">Dairy Products</a></li>
+								<hr>
+								<li><a href="/CeyloneTeaPage.html">Ceylon Tea & Coffee</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="/giftCard.html">Gift Cards</a></li>
+					<li><a href="/BestSellItemPage.html">Best Selling Items</a></li>
+					<li><a href="/NewArrivals.html">New Arrivals</a></li>
+					<li style="width: 50px; margin:0 25px;"><a href="/LoginPage.html">Login</a></li>
+				</ul>
+			</div>
+		</div>
+
+        <div class="image_description_container">
+            <div class="image_container">
+                <img id='newimg' src="" width="100%">
+            </div>
+
+            <div class="details_container">
+                <div class="topic_container">
+                    <h3 id="lbl1"></h3>
+                    <div class="review_con">
+                        <div class="rating" id="rating" style="color: #fff; text-shadow: -1px -1px 0 rgb(255, 217, 0), 1px -1px 0 rgb(255, 217, 0), -1px 1px 0 rgb(255, 217, 0), 1px 1px 0 rgb(255, 196, 0);">
+
+                        </div>
+
+                        <div class="review_r" id="review_row" style="color: rgb(156, 156, 156); margin-left: 25px;">
+
+                        </div>
+                    </div>
+
+                    <div class="price_cont">
+                        <img src="/media/poland-zloty-icon.png" width="25" height="25">
+                        <p id="price" style="margin-left: 10px;"></p>
+                    </div>
+
+
+                    <div id="quantityID" class="item_quantity">
+                        <p>Quantity</p>
+                        <select id="selectBox">
+                            <option id="1">1</option>
+                            <option id="2">2</option>
+                            <option id="3">3</option>
+                            <option id="4">4</option>
+                            <option id="5">5</option>
+                            <option id="6">10</option>
+                        </select>
+                    </div>
+
+                </div>
+            
+
+
+                <div class="button_container">
+                    <a href="/CheckoutPage.html"><button>Buy Now</button></a>
+                    <a href="/homePage.html" style="text-decoration: none;"><button onclick="clearLocalStorageMy()">Cancle</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_container">
+            <div class="Contact_details">
+                <div class="Contact_us">
+                    <a href="ContactUs.html">Contact Us</a>
+                    <a href="/AboutUs.html">About Us</a>
+                </div>
+                <div class="follow_us">
+                    <h4>Follow Us</h4>
+
+                    <div class="social_icon">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.google.com/intl/si/gmail/about/"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment_method_chips">
+                <div style="display: flex; align-items:center;">
+                    <div class="logo"><a href="https://pay.amazon.com/" ><img src="/media/amazon-pay.png" width="50" height="50"/></a></div>
+                    <div class="logo"><a href="https://www.apple.com/apple-pay/" ><img src="/media/apple-pay.png" width="40" height="40"/></a></div>
+                    <div class="logo"><a href="https://pay.google.com/about/" ><img src="/media/google-pay.png" width="40" height="40"/></a></div>
+                    <div class="logo"><a href="https://www.visa.com.lk/pay-with-visa/click-to-pay-with-visa.html" ><img src="/media/visa.png" width="40" height="40"/></a></div>
+                    <div class="logo"><a href="https://vimopay.in/" ><img src="/media/vimeo.png" width="30" height="30"/></a></div>
+                </div>
+            
+                <div style="display: flex; align-items:center;">
+                    <div class="logo"><a href="https://www.paypal.com/lk/home"><img src="/media/paypal.png" width="40" height="40"/></a></div>
+                    <div class="logo"><a href="https://www.dinersclub.com/"><img src="/media/symbol.png" width="50" height="40"/></a></div>
+                    <div class="logo"><a href="https://www.americanexpress.lk/" ><img src="/media/amex.png" width="40" height="40"/></a></div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <script>
+            function clearLocalStorageMy()
+            {
+                localStorage.clear();
+            }
+
+        document.getElementById('newimg').src = localStorage.getItem('imageData');
+        document.getElementById('lbl1').textContent = localStorage.getItem('labelData');
+        document.getElementById('price').textContent = localStorage.getItem('priceData');
+        document.getElementById('rating').innerHTML=localStorage.getItem('rating');
+        document.getElementById('review_row').innerHTML=localStorage.getItem('review');
+    </script>
+</body>
+</html>
